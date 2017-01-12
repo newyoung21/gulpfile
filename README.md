@@ -15,14 +15,14 @@
         browserSync = require('browser-sync').create();//浏览器同步更新
 
 ##默认gulp 
-###第一步清空文件 clear
-###第二步构建文件 build
-###第三步开启服务和监听文件 ['serve','watch']
+####第一步清空文件 clear
+####第二步构建文件 build
+####第三步开启服务和监听文件 ['serve','watch']
     
     gulp.task('default',function(callback){
       return runSequence('clear','build',['serve','watch'],callback);
-    });
-    //第一步清空文件
+    });
+###第一步清空文件
     gulp.task('clear',function(callback){
       return del(['dist/'], callback);
     });
